@@ -1,7 +1,11 @@
-type Props = {};
+import { Outlet } from 'react-router-dom';
 
-const DishPageLayout = (props: Props) => {
-	return <div>DishPageLayout</div>;
+const DishPageLayout = () => {
+	return (
+		<>
+			<Outlet />
+		</>
+	);
 };
 
 export default DishPageLayout;

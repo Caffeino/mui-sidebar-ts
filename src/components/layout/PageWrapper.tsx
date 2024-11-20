@@ -5,8 +5,8 @@ type Props = {
 	children: ReactNode;
 };
 
-const PageWrapper = (props: Props) => {
-	return <>{props.children}</>;
+const PageWrapper = ({ state, children }: Props) => {
+	return <>{children}</>;
 };
 
 export default PageWrapper;
