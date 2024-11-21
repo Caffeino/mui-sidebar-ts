@@ -4,8 +4,8 @@ import PageWrapper from '../components/layout/PageWrapper';
 import appRoutes from './appRoutes';
 import { RouteType } from './config';
 
-const generateRoute = (routes: RouteType[]): ReactNode => {
-	return routes.map((route, index) =>
+const generateRoute = (routes: RouteType[]): ReactNode =>
+	routes.map((route, index) =>
 		route.index ? (
 			<Route
 				key={index}
@@ -27,6 +27,5 @@ const generateRoute = (routes: RouteType[]): ReactNode => {
 			</Route>
 		)
 	);
-};
 
 export const routes: ReactNode = generateRoute(appRoutes);

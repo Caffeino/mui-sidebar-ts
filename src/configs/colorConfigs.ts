@@ -1,9 +1,10 @@
 const colorConfigs = {
 	sidebar: {
 		bg: '#edfffe',
-		color: '#ffffff',
-		hoverBg: '#edffee',
-		active: '#edfeee'
+		color: '#5f6868',
+		hoverBg: '#aef3ed',
+		active: '#edfeee',
+		iconColor: '#ff7777'
 	},
 	topbar: {
 		bg: '#aef3ed',

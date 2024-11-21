@@ -10,14 +10,14 @@ const Topbar = () => {
 				width: `calc(100% - ${sizeConfigs.sidebar.with})`,
 				ml: sizeConfigs.sidebar.with,
 				boxShadow: 'unset',
-				backgroundColor: colorConfigs.topbar.bg,
-				color: colorConfigs.topbar.color,
 				borderBottom: colorConfigs.topbar.borderB
 			}}
 		>
 			<Container maxWidth='xl'>
 				<Toolbar disableGutters>
-					<Typography variant='h6'>React sidebar with dropdown</Typography>
+					<Typography variant='h6'>
+						Express food ready for delivery...
+					</Typography>
 				</Toolbar>
 			</Container>
 		</AppBar>
