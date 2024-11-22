@@ -3,7 +3,7 @@ const colorConfigs = {
 		bg: '#edfffe',
 		color: '#5f6868',
 		hoverBg: '#aef3ed',
-		active: '#edfeee',
+		active: '#aef3ed',
 		iconColor: '#ff7777'
 	},
 	topbar: {

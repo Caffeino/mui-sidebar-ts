@@ -1,4 +1,6 @@
-import { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { setAppState } from '../../redux/features/appStateSlice';
 
 type Props = {
 	state?: string;
@@ -6,6 +8,14 @@ type Props = {
 };
 
 const PageWrapper = ({ state, children }: Props) => {
+	const dispatch = useDispatch();
+
+	useEffect(() => {
+		if (!state) return;
+
+		dispatch(setAppState(state));
+	}, [dispatch, state]);
+
 	return <>{children}</>;
 };
 

@@ -7,9 +7,12 @@ import ContactPage from '../pages/contact/ContactPage';
 import ChickenPage from '../pages/dish/ChickenPage';
 import DishIndex from '../pages/dish/DishIndex';
 import DishPageLayout from '../pages/dish/DishPageLayout';
+import PorkPage from '../pages/dish/PorkPage';
+import SeafoodPage from '../pages/dish/SeafoodPage';
 import DrinkIndex from '../pages/drink/DrinkIndex';
 import DrinkPageLayout from '../pages/drink/DrinkPageLayout';
 import SodaPage from '../pages/drink/SodaPage';
+import TeaPage from '../pages/drink/TeaPage';
 import HomePage from '../pages/home/HomePage';
 import OfferPage from '../pages/offer/OfferPage';
 import OrderPage from '../pages/order/OrderPage';
@@ -51,6 +54,22 @@ const appRoutes: RouteType[] = [
 				sidebarProps: {
 					displayText: 'Chicken'
 				}
+			},
+			{
+				path: '/dishes/pork',
+				element: <PorkPage />,
+				state: 'dishes.pork',
+				sidebarProps: {
+					displayText: 'Pork'
+				}
+			},
+			{
+				path: '/dishes/seafood',
+				element: <SeafoodPage />,
+				state: 'dishes.seafood',
+				sidebarProps: {
+					displayText: 'Seafood'
+				}
 			}
 		]
 	},
@@ -74,6 +93,14 @@ const appRoutes: RouteType[] = [
 				state: 'drinks.soda',
 				sidebarProps: {
 					displayText: 'Soda'
+				}
+			},
+			{
+				path: '/drinks/teas',
+				element: <TeaPage />,
+				state: 'drinks.teas',
+				sidebarProps: {
+					displayText: 'Teas'
 				}
 			}
 		]

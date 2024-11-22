@@ -1,7 +1,11 @@
-type Props = {};
+import { Outlet } from 'react-router-dom';
 
-const DrinkPageLayout = (props: Props) => {
-	return <div>DrinkPageLayout</div>;
+const DrinkPageLayout = () => {
+	return (
+		<>
+			<Outlet />
+		</>
+	);
 };
 
 export default DrinkPageLayout;
